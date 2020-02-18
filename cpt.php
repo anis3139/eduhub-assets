@@ -306,3 +306,23 @@ function eduhub_register_my_cpts_section() {
 	
 }
 add_action( 'init', 'eduhub_register_my_cpts_section' );
+
+
+
+
+
+
+
+
+
+function eduhub_single_template($file){
+
+	global $post;
+	if('study-abroads'== $post=>post_type){
+		$file_path= plugin_dir_path(__FILE__)."cpt-templates/single-study-abroads.php";
+		$file=$file_path;
+	}
+	return $file;
+}
+
+add_filter('single_template','eduhub_single_template');
