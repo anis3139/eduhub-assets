@@ -3,7 +3,7 @@
 Plugin Name: Eduhub Assets
 Plugin URI: https://www.rainyforest.xyz
 Description: Eduhub Assets
-Version: 1.0
+Version: 1.0.1
 Author: Anis Arronno
 Author URI: https://www.rainyforest.xyz
 License: GPLv2 or later
