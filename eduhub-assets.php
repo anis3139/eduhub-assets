@@ -2,7 +2,7 @@
 /*
 Plugin Name: Eduhub Assets
 Plugin URI: https://www.rainyforest.xyz
-Description: Display Your Social Link
+Description: Eduhub Assets
 Version: 1.0
 Author: Anis Arronno
 Author URI: https://www.rainyforest.xyz
