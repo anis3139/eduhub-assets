@@ -6,6 +6,9 @@ function eduhub_register_my_cpts_section() {
 	$labels = [
 		"name" => __( "Sliders", "eduhub" ),
 		"singular_name" => __( "Slider", "eduhub" ),
+		"add_new" => __( "Add Slider", "eduhub" ),
+		"featured_image" => __( "Slider Image", "eduhub" ),
+		"set_featured_image" => __( "Add Slider Image", "eduhub" ),
         
 	];
 
@@ -28,7 +31,7 @@ function eduhub_register_my_cpts_section() {
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => true,
-		"rewrite" => [ "slug" => "sliders", "with_front" => true ],
+		"rewrite" => [ "slug" => "slider", "with_front" => true ],
 		"query_var" => true,
 		"menu_position" => 20,
 		"menu_icon" => "dashicons-format-gallery",
@@ -45,6 +48,8 @@ function eduhub_register_my_cpts_section() {
 		"name" => __( "Testimonials", "eduhub" ),
 		"singular_name" => __( "Testimonial", "eduhub" ),
 		"add_new" => __( "Add Testimonial", "eduhub" ),
+		"featured_image" => __( "Testimonial Image", "eduhub" ),
+		"set_featured_image" => __( "Add Testimonial Image", "eduhub" ),
 	];
 
 	$args = [
@@ -197,7 +202,7 @@ function eduhub_register_my_cpts_section() {
 	];
 
 	$args = [
-		"label" => __( "Gallery", "eduhub" ),
+		"label" => __( "Study Abroad", "eduhub" ),
 		"labels" => $labels,
 		"description" => "",
 		"public" => false,
@@ -218,7 +223,7 @@ function eduhub_register_my_cpts_section() {
 		"rewrite" => [ "slug" => "study-abroads", "with_front" => true ],
 		"query_var" => true,
 		"menu_position" => 20,
-		"menu_icon" => "dashicons-format-gallery",
+		"menu_icon" => "dashicons-welcome-learn-more",
 		"supports" => [ "title","thumbnail","editor"],
         "taxonomies"=>array('category'),
 	];
@@ -269,7 +274,7 @@ function eduhub_register_my_cpts_section() {
 		$labels = [
 		"name" => __( "Video", "eduhub" ),
 		"singular_name" => __( "Video", "eduhub" ),
-		"add_new"=>__( "Add Video Item", "eduhub" ),
+		"add_new"=>__( "Add Video", "eduhub" ),
 		
         
 	];
@@ -293,7 +298,7 @@ function eduhub_register_my_cpts_section() {
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => true,
-		"rewrite" => [ "slug" => "Video", "with_front" => true ],
+		"rewrite" => [ "slug" => "video", "with_front" => true ],
 		"query_var" => true,
 		"menu_position" => 20,
 		"menu_icon" => "dashicons-format-video",
@@ -306,23 +311,3 @@ function eduhub_register_my_cpts_section() {
 	
 }
 add_action( 'init', 'eduhub_register_my_cpts_section' );
-
-
-
-
-
-
-
-
-
-function eduhub_single_template($file){
-
-	global $post;
-	if("study-abroads"== $post->post_type){
-		$file_path= plugin_dir_path(__FILE__)."cpt-templates/single-study-abroads.php";
-		$file=$file_path;
-	}
-	return $file;
-}
-
-add_filter('single_template','eduhub_single_template');
