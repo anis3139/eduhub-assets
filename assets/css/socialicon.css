@@ -5,7 +5,11 @@
 	padding: 0px 10px;
 	font-size: 30px;
 }
-
+@media only screen and (max-width:768px) {
+	.social-icon-custom-css{
+	justify-content:center;
+}
+}
 
 .fa-facebook:hover{
 	color: blue;
