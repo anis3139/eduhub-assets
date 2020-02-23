@@ -5,3 +5,23 @@
 	padding: 0px 10px;
 	font-size: 30px;
 }
+
+
+.fa-facebook:hover{
+	color: blue;
+}
+.fa-twitter:hover{
+	color: #1DA1F2;
+}
+.fa-pinterest:hover{
+	color: #CB2027;
+}
+.fa-instagram:hover{
+	color: #AC4690;
+}
+.fa-google-plus:hover{
+	color: #DC5246;
+}
+.fa-youtube:hover{
+	color: #FF0000;
+}
