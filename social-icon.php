@@ -148,12 +148,12 @@ class rainyforestSocialIcons_Widget extends WP_Widget {
             }
         }
         ?>
-        <p>
+        <!--<p>
             <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:', 'socialicon' ); ?></label>
             <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
                    name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text"
                    value="<?php echo esc_attr( $title ); ?>"/>
-        </p>
+        </p>-->
         <p>
             <label for="<?php echo esc_attr( $this->get_field_id( 'classname' ) ); ?>"><?php _e( 'CSS Class name:', 'socialicon' ); ?></label>
             <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'classname' ) ); ?>"
