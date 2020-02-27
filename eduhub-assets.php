@@ -16,5 +16,5 @@ Domain Path: /languages/
 
 require_once dirname( __FILE__ ) . '/shortcode.php';
 require_once dirname( __FILE__ ) . '/shortcode-ui.php';
-require_once dirname( __FILE__ ) . '/cpt.php';
+/*require_once dirname( __FILE__ ) . '/cpt.php';*/
 require_once dirname( __FILE__ ) . '/social-icon.php';
